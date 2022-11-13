@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | Interactive card details form</title>
+</head>
+<body>
+<main>
+    <div class="container">
+        <div class="card">
+            <img src="images/bg-main-desktop.png" alt="bg" class="desktop">
+            <!--        credit cards-->
+            <div class="cards">
+                <!--            front side of card-->
+                <div class="front">
+                    <img src="images/bg-card-front.png" class="front_card" alt="front">
+                    <div class="front_card_data">
+                        <img src="images/card-logo.svg" alt="card_logo">
+                        <p id="card_num">
+                            1234 5678 9123 0000
+                        </p>
+                        <div class="details">
+                            <p id="name">mahid quershi</p>
+
+                            <p id="exp">00 / 00</p>
+                        </div>
+                    </div>
+                </div>
+                <!--back side of card-->
+                <div class="back">
+                    <img src="images/bg-card-back.png" class="back_card" alt="back">
+                    <div class="back_card_data">
+                        <p id="cvv">000</p>
+                    </div>
+                </div>
+            </div>
+            <img src="images/bg-main-mobile.png" alt="bg" class="mobile">
+        </div>
+        <div class="card_form">
+            <form>
+                <div class="form_group">
+                    <label for="c_name">cardholder Name</label>
+                    <input type="text" id="c_name" placeholder="e.g. mahid quershi" size="25" maxlength="25">
+                    <p class="err" id="err_name">Can't be blank</p>
+                    <label for="c_num">card number</label>
+                    <input type="text" id="c_num" placeholder="e.g. 1234 5678 9123 0000" size="19" maxlength="19">
+                    <p class="err" id="err_num">Must be at least 16 numbers</p>
+                    <div class="c_data">
+                        <div class="c_exp">
+                            <label for="c_exp_month">exp. date (MM/YY)</label>
+                            <span class="c_flex">
+                <input type="text" id="c_exp_month" placeholder="MM" size="2" maxlength="2">
+                <input type="text" id="c_exp_year" placeholder="YY" size="2" maxlength="2">
+                        </span>
+                            <p class="err" id="err_exp">Can't be blank</p>
+                        </div>
+                        <div class="c_csv">
+                            <label for="c_cvv">cvv</label>
+                            <input type="text" id="c_cvv" placeholder="000" size="3" maxlength="3">
+                            <p class="err" id="err_cvv">Can't be blank</p>
+                        </div>
+                    </div>
+
+                    <button type="submit" id="c_submit">Confirm</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+<script src="main.js"></script>
+</body>
+</html>

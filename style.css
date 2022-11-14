@@ -174,14 +174,16 @@ input[type='number']::-webkit-inner-spin-button {
 #c_name {
     text-transform: capitalize;
 }
-.err{
+
+.err {
     align-self: flex-start;
     padding: 0 0 5px;
     font-size: 0.8rem;
     color: hsl(0, 100%, 66%);
     visibility: hidden;
 }
-#c_submit {
+
+.btn {
     width: 100%;
     padding: 10px 15px;
     background: hsl(278, 68%, 11%);
@@ -191,8 +193,21 @@ input[type='number']::-webkit-inner-spin-button {
     cursor: pointer;
 }
 
-
-@media screen and (max-width:1150px){
+.contain{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 320px;
+    background: #fff;
+    margin: auto;
+}
+.contain p {
+    color: hsl(279, 6%, 55%);
+    padding:20px 0;
+    font-size: 1.1rem;
+}
+@media screen and (max-width: 1150px) {
     .cards {
         position: absolute;
         left: 40%;
@@ -204,7 +219,7 @@ input[type='number']::-webkit-inner-spin-button {
 @media screen and (max-width: 1030px) {
     .container {
         flex-direction: column;
-        overflow:visible;
+        overflow: visible;
         overflow-x: hidden;
     }
 
@@ -229,7 +244,7 @@ input[type='number']::-webkit-inner-spin-button {
         position: absolute;
         left: 50%;
         top: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
     }
 
     .front_card, .back_card {
@@ -244,7 +259,8 @@ input[type='number']::-webkit-inner-spin-button {
         margin-left: 18%;
         margin-top: -225px;
     }
-    .front{
+
+    .front {
         z-index: 1;
         margin-top: 330px;
         margin-left: 20px;
@@ -254,9 +270,11 @@ input[type='number']::-webkit-inner-spin-button {
         padding: 10px;
         width: 250px;
     }
-    .front_card_data img{
+
+    .front_card_data img {
         width: auto;
     }
+
     #card_num {
         margin-top: 10px;
         font-size: 1.2rem;
@@ -272,25 +290,32 @@ input[type='number']::-webkit-inner-spin-button {
     }
 
     .card_form {
-        padding-top:15vh;
+        padding-top: 15vh;
         padding-bottom: 20px;
     }
 
     .form_group {
         width: 300px;
     }
+    .contain{
+    width: 300px;
+    }
 }
-@media screen and (max-width: 450px){
+
+@media screen and (max-width: 450px) {
     .cards {
         position: absolute;
         left: 50%;
         top: 20%;
-        transform: translate(-60%,-50%);
+        transform: translate(-60%, -50%);
     }
-    .front{
+
+    .front {
         margin-top: 300px;
     }
-    .back{
+
+    .back {
         margin-top: -200px;
     }
+
 }

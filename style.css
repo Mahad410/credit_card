@@ -306,7 +306,7 @@ input[type='number']::-webkit-inner-spin-button {
     .cards {
         position: absolute;
         left: 50%;
-        top: 20%;
+        top: 10%;
         transform: translate(-60%, -50%);
     }
 
@@ -315,7 +315,7 @@ input[type='number']::-webkit-inner-spin-button {
     }
 
     .back {
-        margin-top: -200px;
+        margin-top: -225px;
     }
 
 }
